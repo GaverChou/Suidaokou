@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/CardviewStyle"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="@dimen/cardview_list_item_cardview_radias">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardview_list_item_height">
+
+        <ImageView
+            android:id="@+id/cardview_item_img"
+            style="@style/CardviewStyle.Imageview"
+            android:background="@mipmap/header_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cardview_item_img"
+            android:padding="@dimen/cardview_list_item_pannel_margin">
+
+            <TextView
+                android:id="@+id/cardview_item_tit"
+                style="@style/CardviewStyle.TitleTv"
+                android:text="dsdsadsadasdsa" />
+
+            <TextView
+                android:id="@+id/cardview_item_colloge_tv"
+                style="@style/CardviewStyle.SubTv"
+                android:layout_below="@+id/cardview_item_tit"
+                android:layout_marginTop="@dimen/cardview_list_item_textview_marginTop"
+                android:text="Small Text" />
+
+            <TextView
+                android:id="@+id/cardview_item_addr_tv"
+                style="@style/CardviewStyle.SubTv"
+                android:layout_below="@+id/cardview_item_colloge_tv"
+                android:text="Small Text"
+                android:textColor="@color/tv_red" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cardview_item_sendtime_tv"
+                    style="@style/CardviewStyle.SubTv"
+                    android:text="Small Text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/linearpanel"
+                android:layout_marginRight="@dimen/cardview_list_item_divier_margin_left"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/linearpanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cardview_item_day_tv"
+                    style="@style/CardviewStyle.TimeTv"
+                    android:text="Small Text"
+                    android:textSize="@dimen/cardview_list_item_big_time_textsize" />
+
+                <TextView
+                    android:id="@+id/cardview_item_mouth_tv"
+                    style="@style/CardviewStyle.TimeTv"
+                    android:text="Small Text" />
+
+                <TextView
+                    android:id="@+id/cardview_item_time_tv"
+                    style="@style/CardviewStyle.TimeTv"
+                    android:text="Small Text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Drawer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drawer_layout_img_header_height"
+        android:background="@mipmap/profile_bg"
+        android:padding="@dimen/drawer_layout_img_header_padding">
+
+        <com.gaverchou.suidaokou.ui.RoundImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/drawer_layout_img_header_touxiang_size"
+            android:layout_height="@dimen/drawer_layout_img_header_touxiang_size"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/drawer_layout_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="GaverChou"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_allaction_ll"
+                style="@style/Drawer.Seletor">
+
+                <View
+                    style="@style/Drawer.Seletor_icon"
+                    android:background="@mipmap/me"></View>
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:layout_marginLeft="@dimen/drawer_layout_selector_icon_margin"
+                    android:text="@string/school_action" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_myaction_ll"
+                style="@style/Drawer.Seletor">
+
+                <View
+                    style="@style/Drawer.Seletor_icon"
+                    android:background="@mipmap/me"></View>
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:layout_marginLeft="@dimen/drawer_layout_selector_icon_margin"
+                    android:text="@string/my_action" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_allshetuan_ll"
+                style="@style/Drawer.Seletor">
+
+                <View
+                    style="@style/Drawer.Seletor_icon"
+                    android:background="@mipmap/me"></View>
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:layout_marginLeft="@dimen/drawer_layout_selector_icon_margin"
+                    android:text="@string/all_shetuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_message_ll"
+                style="@style/Drawer.Seletor">
+
+                <View
+                    style="@style/Drawer.Seletor_icon"
+                    android:background="@mipmap/me"></View>
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:layout_marginLeft="@dimen/drawer_layout_selector_icon_margin"
+                    android:text="@string/message_alert" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_dingshui_ll"
+                style="@style/Drawer.Seletor">
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:text="@string/dingshui" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_superlibrary_ll"
+                style="@style/Drawer.Seletor">
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:text="@string/superlibray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drawer_layout_setting_ll"
+                style="@style/Drawer.Seletor">
+
+                <TextView
+                    style="@style/Drawer.Seletor_tv"
+                    android:text="@string/action_settings" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

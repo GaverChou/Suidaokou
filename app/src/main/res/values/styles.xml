@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="CardviewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CardviewStyle.Imageview">
+        <item name="android:layout_width">@dimen/cardview_list_item_image_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CardviewStyle.TitleTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardviewStyle.Panel">
+        <item name="android:layout_marginTop">@dimen/cardview_list_item_cardview_margin</item>
+        <item name="android:layout_marginLeft">@dimen/cardview_list_item_cardview_margin</item>
+        <item name="android:layout_marginRight">@dimen/cardview_list_item_cardview_margin</item>
+    </style>
+
+    <style name="CardviewStyle.SubTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CardviewStyle.TimeTv" parent="CardviewStyle.SubTv">
+        <item name="android:textColor">@color/tv_red</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fragment_header_image_height</item>
+    </style>
+
+    <style name="Header.TitleText" parent="android:TextAppearance.Holo">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:shadowColor">#8000</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:layout_marginLeft">@dimen/fragment_header_textview_marginleft</item>
+    </style>
+
+    <style name="Header.SubTitleText" parent="Header.TitleText">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">23dp</item>
+    </style>
+
+    <style name="Drawer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Drawer.Seletor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/drawer_layout_selector_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/drawer_layout_selector_padding</item>
+    </style>
+
+    <style name="Drawer.Seletor_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Drawer.Seletor_icon">
+        <item name="android:layout_width">@dimen/drawer_layout_selector_icon_size</item>
+        <item name="android:layout_height">@dimen/drawer_layout_selector_icon_size</item>
+    </style>
+
+    <style name="Profile_selector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/profile_layout_selector_margintop</item>
+        <item name="android:background">@drawable/profile_message_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/profile_layout_selector_paddingtopbuttom</item>
+        <item name="android:paddingLeft">@dimen/profile_layout_selector_paddingleftright</item>
+        <item name="android:paddingRight">@dimen/profile_layout_selector_paddingleftright</item>
+        <item name="android:paddingTop">@dimen/profile_layout_selector_paddingtopbuttom</item>
+    </style>
+
+    <style name="Profile_selector_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Profile_selector_TextViewTit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginLeft">@dimen/profile_layout_selector_tv_marginleft</item>
+    </style>
+</resources>

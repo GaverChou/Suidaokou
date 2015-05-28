@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TunnelMessage</string>
+    <string name="school_action">学校活动</string>
+    <string name="header_title">跨年晚会</string>
+    <string name="header_subtitle">today 10/20</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

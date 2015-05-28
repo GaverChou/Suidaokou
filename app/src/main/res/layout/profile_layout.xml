@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/profile_header"
+        layout="@layout/profile_headerview" />
+
+    <LinearLayout
+        style="@style/Profile_selector"
+        android:paddingRight="@dimen/profile_layout_selector2_paddingright">
+
+
+        <View
+            style="@style/Drawer.Seletor_icon"
+            android:background="@mipmap/me"></View>
+
+        <TextView
+            android:id="@+id/profile_layout_biaoqian_tv"
+            style="@style/Profile_selector_TextViewTit"
+            android:layout_gravity="center_vertical"
+            android:singleLine="false"
+            android:text="@string/test_profile" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Profile_selector"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/birthday_icon"
+                style="@style/Drawer.Seletor_icon"
+                android:background="@mipmap/me"></View>
+
+            <TextView
+                style="@style/Profile_selector_TextViewTit"
+                android:layout_toRightOf="@+id/birthday_icon"
+                android:text="@string/birthday" />
+
+            <TextView
+                android:id="@+id/profile_layout_birthday_tv"
+                style="@style/Profile_selector_TextView"
+                android:layout_alignParentRight="true"
+                android:text="test_profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_layout_selector_item_margintop">
+
+            <View
+                android:id="@+id/hobby_icon"
+                style="@style/Drawer.Seletor_icon"
+                android:background="@mipmap/me"></View>
+
+            <TextView
+                style="@style/Profile_selector_TextViewTit"
+                android:layout_toRightOf="@+id/hobby_icon"
+                android:text="@string/diqu" />
+
+            <TextView
+                android:id="@+id/profile_layout_diqu_tv"
+                style="@style/Profile_selector_TextView"
+                android:layout_alignParentRight="true"
+                android:text="test_profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_layout_selector_item_margintop">
+
+            <View
+                android:id="@+id/diqu_icon"
+                style="@style/Drawer.Seletor_icon"
+                android:background="@mipmap/me"></View>
+
+            <TextView
+                style="@style/Profile_selector_TextViewTit"
+                android:layout_toRightOf="@+id/diqu_icon"
+                android:text="@string/hobby" />
+
+            <TextView
+                android:id="@+id/profile_layout_hobby_tv"
+                style="@style/Profile_selector_TextView"
+                android:layout_alignParentRight="true"
+                android:text="test_profile" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
