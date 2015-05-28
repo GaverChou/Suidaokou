@@ -4,29 +4,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
+
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/fragment_header"
-            layout="@layout/fragment_header" />
+        <!--<include-->
+        <!--android:id="@+id/fragment_header"-->
+        <!--layout="@layout/fragment_header" />-->
 
-        <View
-            android:id="@+id/main_list_background"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/bg_theme" />
+        <!--<View-->
+        <!--android:id="@+id/main_list_background"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/bg_theme" />-->
 
-        <com.gaverchou.observablescrollview.ObservableListView
-            android:id="@+id/main_list"
+        <!--<com.gaverchou.observablescrollview.ObservableListView-->
+        <!--android:id="@+id/main_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/cardview_list_item_margin"-->
+        <!--android:layout_marginRight="@dimen/cardview_list_item_margin"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="@dimen/cardview_list_divider_height"-->
+        <!--android:scrollbars="none" />-->
+        <FrameLayout
+            android:id="@+id/main_content_panel"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/cardview_list_item_margin"
-            android:layout_marginRight="@dimen/cardview_list_item_margin"
-            android:divider="@null"
-            android:dividerHeight="@dimen/cardview_list_divider_height"
-            android:scrollbars="none" />
+            android:layout_height="match_parent"></FrameLayout>
+
         <include
             android:id="@+id/main_toolbar"
             layout="@layout/toolbar"></include>
@@ -34,6 +40,6 @@
 
 
     <include
-        android:id="@+id/drawer_view"
-        layout="@layout/drawer_layout"/>
+        android:id="@+id/main_drawer_view"
+        layout="@layout/drawer_layout" />
 </android.support.v4.widget.DrawerLayout>

@@ -8,6 +8,7 @@ import android.util.TypedValue;
  * Created by GaverChou on 2015-05-27.
  */
 public abstract class BaseActivity extends AppCompatActivity {
+
     protected int getActionBarSize() {
         TypedValue typedValue = new TypedValue();
         int[] textSizeAttr = new int[]{R.attr.actionBarSize};
@@ -18,6 +19,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return actionBarSize;
     }
 
+    protected void initView(){};
     protected int getScreenHeight() {
         return findViewById(android.R.id.content).getHeight();
     }

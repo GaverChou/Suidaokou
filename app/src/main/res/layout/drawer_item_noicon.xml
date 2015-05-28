@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/Drawer.Seletor">
+
+<TextView
+    android:id="@+id/drawer_item_noicon_tit_tv"
+    style="@style/Drawer.Seletor_tv"
+    android:text="@string/action_settings" />
+</LinearLayout>
