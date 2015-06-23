@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gaverchou.observablescrollview.ObservableListView
+        android:id="@+id/inform_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.gaverchou.observablescrollview.ObservableListView>
+
+    <LinearLayout
+        android:id="@+id/actinfo_input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium"
+        android:visibility="visible">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/actinfo_input_editv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/send_comment"
+            android:textSize="@dimen/h_textsiz" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar"></include>
+</RelativeLayout>

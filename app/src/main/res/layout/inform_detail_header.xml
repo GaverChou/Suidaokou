@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headview_divide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/consulation_height"
+        android:background="@color/btn_red"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="48dp"
+        android:paddingTop="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/inform_detail_date_tv"
+            android:ellipsize="end"
+            android:text="@string/want_go"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xh_textsiz" />
+
+        <TextView
+            android:id="@+id/inform_detail_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="6月18日"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_textsiz" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/fragment_actinfo_content_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+</LinearLayout>
+

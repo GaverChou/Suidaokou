@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_h"
+            android:layout_marginRight="@dimen/padding_h"
+            android:layout_marginTop="@dimen/padding_h"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="@dimen/padding_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dingshui_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/water1"
+                    android:scaleType="centerCrop"
+                    android:background="@color/deep_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:id="@+id/dingshui_wt_switch">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginRight="58dp"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dingshui_yitong_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="1桶"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h_textsiz" />
+
+                            <com.gc.materialdesign.views.Switch
+                                android:id="@+id/switchView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:clickable="false"
+                                android:layout_gravity="center_vertical"
+                                android:background="#1E88E5" />
+
+                            <TextView
+                                android:id="@+id/dingshui_twotong_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="2桶"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h_textsiz" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/titlebar_height"
+                        android:layout_marginRight="@dimen/titlebar_height"
+                        android:background="#88CECECE" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/titlebar_height"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="南苑13栋551"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/h_textsiz" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_marginLeft="@dimen/padding_h"
+            android:layout_marginRight="@dimen/padding_h"
+            android:layout_marginTop="@dimen/padding_medium"
+            card_view:cardBackgroundColor="@color/btn_red"
+            card_view:cardCornerRadius="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/dingshui"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_textsiz" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+

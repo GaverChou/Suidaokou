@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dialog_content_padding">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Dialog_contentTV"
+            android:text="@string/action" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Dialog_contentTV"
+            android:layout_alignParentRight="true"
+            android:text="艺术展"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dialog_content_padding">
+
+        <TextView
+            style="@style/Dialog_contentTV"
+            android:text="@string/action_alert_time"
+            android:id="@+id/textView3" />
+
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addnote_time_spinner"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"/>
+    </RelativeLayout>
+</LinearLayout>

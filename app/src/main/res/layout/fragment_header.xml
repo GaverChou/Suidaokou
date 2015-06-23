@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handy_tv="http://schemas.android.com/apk/res-auto"
     style="@style/Header">
 
     <ImageView
@@ -28,5 +28,16 @@
         android:layout_alignParentBottom="true"
         android:text="@string/header_subtitle" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_header_background"
+        android:minHeight="?attr/actionBarSize" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_header_buttom_background"
+        android:layout_alignParentBottom="true"
+        android:minHeight="?attr/actionBarSize" />
 
 </RelativeLayout>

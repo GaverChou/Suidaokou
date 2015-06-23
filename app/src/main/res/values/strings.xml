@@ -1,21 +1,71 @@
 <resources>
     <string name="app_name">隧道口</string>
-    <string name="school_action">学校活动</string>
+    <string name="school_action">校园活动</string>
+    <string name="consulation_school">校内资讯</string>
     <string name="header_title">跨年晚会</string>
     <string name="drawer_open">打开</string>
     <string name="drawer_close">关闭</string>
     <string name="my_action">我的活动</string>
     <string name="all_shetuan">所有社团</string>
     <string name="message_alert">消息提醒</string>
-    <string name="dingshui">定水网</string>
-    <string name="superlibray">超级图书馆</string>
+    <string name="dingshui">一键订水</string>
+    <string name="superlibray">图书馆里</string>
+    <string name="school_inform">学校通知</string>
     <string name="header_subtitle">today 10/20</string>
+
+    <string name="profile">个人资料</string>
     <string name="birthday">生日</string>
     <string name="diqu">地区</string>
     <string name="hobby">爱好</string>
-
+    <string name="back_zhuti">回到主题</string>
+    <string name="huifu_comment">回复评论</string>
+    <string name="want_go">我想去</string>
+    <string name="add_alert">加入提醒</string>
+    <string name="share">分享</string>
+    <string name="action">活动</string>
+    <string name="action_alert_time">提醒时间</string>
+    <string name="action_alert">活动提醒</string>
+    <string name="accept">确定</string>
+    <string name="cancel">取消</string>
     <string name="test_profile">风萧萧，水茫茫，暮云苍黄雁声寒。斜阳外，浪涛涛，滚滚东流辞意健。
 奔入海，何艰辛，长风乱石阻归程。纵南行，挥手去，直捣沧海会有时。</string>
+    <string name="test_inform">风萧萧，水茫茫，暮云苍黄雁声寒。</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">设置</string>
+    <string name="send_comment">发表评论</string>
+    <string name="history_action">历史活动</string>
+    <string name="group_dongtai">社团动态</string>
+    <string name="group_action">社团活动</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="addnote_time_list">
+        <item>提前1小时</item>
+        <item>提前2小时</item>
+        <item>提前3小时</item>
+        <item>提前4小时</item>
+        <item>提前5小时</item>
+    </string-array>
+    <string-array name="superlibray_tit_list">
+        <item>当前借阅</item>
+        <item>借阅历史</item>
+    </string-array>
+    <string-array name="msg_tit_list">
+        <item>评论和赞</item>
+        <item>私信</item>
+    </string-array>
+    <string-array name="myact_tit_list">
+        <item>我的活动</item>
+        <item>想去活动</item>
+    </string-array>
+    <string-array name="org_tit_list">
+        <item>校级社团</item>
+        <item>院级社团</item>
+        <item>学校协会</item>
+    </string-array>
+    <string name="app_list_footer_more">更多</string>
+    <string name="app_list_header_refresh_down">下拉刷新</string>
+    <string name="app_list_header_refreshing">正在刷新</string>
+    <string name="app_list_header_refresh_up">松开刷新</string>
+    <string name="app_list_header_refresh_last_update">上次更新于:%s</string>
+    <string name="app_list_footer_loading">正在加载</string>
 </resources>

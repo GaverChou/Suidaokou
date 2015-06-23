@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handy_tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/Header">
+
+        <ImageView
+            android:id="@+id/group_headerview_bg_img"
+            style="@style/Header"
+            android:background="@mipmap/profile_bg" />
+
+        <com.gaverchou.suidaokou.widget.RoundImageView
+            android:id="@+id/group_headerview_userimg"
+            style="@style/Touxiang_Big"
+            android:layout_centerInParent="true" />
+
+        <com.gaverchou.suidaokou.widget.HandyTextView
+            android:id="@+id/group_headerview_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_headerview_userimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_h"
+            android:text="艺术团学"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_textsiz"
+            handy_tv:textTTF="Roboto-Medium.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_header_background"
+            android:minHeight="?attr/actionBarSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_header_buttom_background"
+            android:minHeight="?attr/actionBarSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="@dimen/flexible_space_height"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="艺术团学是。。。"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mh_textsiz" />
+    </LinearLayout>
+
+    <!--26 090023-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/group_dongtai"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h_textsiz"
+            android:id="@+id/group_dongtai" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/group_action"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/h_textsiz"
+            android:id="@+id/group_action" />
+    </LinearLayout>
+</LinearLayout>

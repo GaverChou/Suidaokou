@@ -25,4 +25,10 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile 'com.android.support:cardview-v7:22.1.1'
+    compile project(':MaterialDesign')
+    compile project(':floatbtnlibrary')
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+    compile project(':volley')
+    compile 'com.google.code.gson:gson:2.2.4'
 }

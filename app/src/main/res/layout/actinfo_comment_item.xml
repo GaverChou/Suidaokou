@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handy_tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_medium">
+
+    <TextView
+        android:id="@+id/actinfo_item_comment_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12评论"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/m_textsiz"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actinfo_item_comment_count_tv">
+
+        <com.gaverchou.suidaokou.widget.RoundImageView
+            android:id="@+id/actinfo_item_touxiang_img"
+            style="@style/Touxiang_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:orientation="vertical">
+
+            <com.gaverchou.suidaokou.widget.HandyTextView
+                android:id="@+id/actinfo_item_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gerred"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h_textsiz"
+                handy_tv:textTTF="Roboto-Medium.ttf" />
+
+            <TextView
+                android:id="@+id/actinfo_item_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:text="@string/test_profile"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"
+                android:textSize="@dimen/mh_textsiz" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium">
+
+                <TextView
+                    android:id="@+id/actinfo_item_comment_ttime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="12-20 12:30"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/m_textsiz" />
+
+                <TextView
+                    android:id="@+id/actinfo_item_z_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="16赞"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/m_textsiz" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <style name="toolstye">
+        <item name="android:elevation">2dp</item>
+    </style>
+</resources>

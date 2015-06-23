@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/currentbook_item_imv"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:background="@color/primary" >
+            <TextView
+                android:id="@+id/currentbook_item_txt_bookname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_textsiz" />
+            <TextView
+                android:id="@+id/currentbook_item_txt_hine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/h_textsiz" />
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentbook_item_txt_booktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h_textsiz" />
+
+            <TextView
+                android:id="@+id/currentbook_item_txt_expiretime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textSize="@dimen/m_textsiz" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

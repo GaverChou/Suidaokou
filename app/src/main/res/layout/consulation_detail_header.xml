@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headview_divide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/consulation_height"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/consulation_bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/c1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/zixun_mask" />
+
+        <TextView
+            android:id="@+id/consulation_detail_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_medium"
+            android:text="书吧假日优惠"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xmh_textsiz"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray100"
+        android:padding="@dimen/padding_medium">
+
+        <com.gaverchou.suidaokou.widget.RoundImageView
+            android:id="@+id/consulation_icon_img"
+            android:layout_width="@dimen/drawer_layout_img_header_touxiang_small_size"
+            android:layout_height="@dimen/drawer_layout_img_header_touxiang_small_size"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_toRightOf="@+id/consulation_icon_img"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/consulation_group_name_tv"
+                style="@style/OrgName"
+                android:textSize="@dimen/h_textsiz" />
+
+            <TextView
+                android:id="@+id/sixin_item_content_tv"
+                style="@style/OrgDescri"
+                android:text="两小时前发布"
+                android:textSize="@dimen/m_textsiz" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/consulation_detail_zan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_favorite_black_18dp"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center"
+            android:text="32"
+            android:textSize="@dimen/h_textsiz" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/fragment_actinfo_content_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+</LinearLayout>
+

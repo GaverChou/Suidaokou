@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/activity_start_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/white"/>
+
+    <com.gaverchou.suidaokou.widget.ImageRefreshListView
+        android:id="@+id/fragment_actinfo_comment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.gaverchou.suidaokou.widget.ImageRefreshListView>
+
+    <View
+        android:id="@+id/mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mask"
+        android:orientation="vertical"
+        android:visibility="gone"></View>
+
+    <include
+        android:id="@+id/actinfo_float_menu"
+        layout="@layout/float_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/actinfo_input_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/padding_h"
+        android:layout_marginEnd="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium" />
+
+    <LinearLayout
+        android:id="@+id/actinfo_input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium"
+        android:visibility="visible">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/actinfo_input_editv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/send_comment"
+            android:textSize="@dimen/h_textsiz" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar"></include>
+</RelativeLayout>

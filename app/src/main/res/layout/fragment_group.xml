@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_theme"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/main_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_theme" />
+    <com.gaverchou.observablescrollview.ObservableRecyclerView
+        android:id="@+id/fragment_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" />
+    <include
+        android:id="@+id/group_headview"
+        layout="@layout/group_headerview" />
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar"></include>
+</RelativeLayout>

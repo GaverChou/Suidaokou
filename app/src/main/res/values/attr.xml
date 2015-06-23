@@ -5,4 +5,26 @@
         <attr name="border_inside_color" format="color" />
         <attr name="border_outside_color" format="color"></attr>
     </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+        <attr name="src" />
+    </declare-styleable>
+
+    <declare-styleable name="Indicator">
+        <attr name="textColor" format="integer" />
+        <attr name="indicatorColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HandyTextView">
+        <attr name="textTTF" format="string" />
+    </declare-styleable>
 </resources>

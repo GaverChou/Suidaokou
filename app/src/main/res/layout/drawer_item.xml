@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Drawer.Seletor">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.gc.materialdesign.views.LayoutRipple
+        android:id="@+id/ripple"
+        style="@style/Drawer.Seletor"
+        ripple:rippleSpeed="35">
+
+        <View
+            android:id="@+id/drawer_item_icon"
+            style="@style/Drawer.Seletor_icon"
+            android:background="@mipmap/me"></View>
+
+        <TextView
+            android:id="@+id/drawer_item_tit_tv"
+            style="@style/Drawer.Seletor_tv"
+            android:layout_marginLeft="@dimen/drawer_layout_selector_icon_margin"
+            android:layout_toRightOf="@+id/drawer_item_icon"
+            android:text="@string/school_action" />
+    </com.gc.materialdesign.views.LayoutRipple>
 
     <View
-        android:id="@+id/drawer_item_icon"
-        style="@style/Drawer.Seletor_icon"
-        android:background="@mipmap/me"></View>
-
-    <TextView
-        android:id="@+id/drawer_item_tit_tv"
-        style="@style/Drawer.Seletor_tv"
-        android:layout_marginLeft="@dimen/drawer_layout_selector_icon_margin"
-        android:text="@string/school_action" />
-</LinearLayout>
+        android:id="@+id/drawer_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ripple"
+        android:background="#88CECECE"
+        android:visibility="gone" />
+</RelativeLayout>

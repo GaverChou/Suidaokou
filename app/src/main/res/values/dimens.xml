@@ -3,22 +3,27 @@
     <dimen name="cardview_list_item_height">136dp</dimen>
     <dimen name="cardview_list_item_image_width">96dp</dimen>
     <dimen name="cardview_list_item_margin">8dp</dimen>
+    <dimen name="cardview_list_item_margintop">7dp</dimen>
     <dimen name="cardview_list_item_pannel_margin">16dp</dimen>
     <dimen name="cardview_list_divider_height">7dp</dimen>
     <dimen name="cardview_list_item_textview_marginTop">8dp</dimen>
     <dimen name="cardview_list_item_cardview_margin">40dp</dimen>
     <dimen name="cardview_list_item_cardview_radias">0.5dp</dimen>
-    <dimen name="cardview_list_item_big_time_textsize">24sp</dimen>
+    <dimen name="cardview_list_item_cardview_radias_big">3dp</dimen>
+    <dimen name="cardview_list_item_big_time_textsize">24dp</dimen>
     <dimen name="cardview_list_item_divier_margin_left">16dp</dimen>
 
     <dimen name="drawer_layout_img_header_height">176dp</dimen>
     <dimen name="drawer_layout_img_header_padding">16dp</dimen>
+    <dimen name="drawer_layout_img_header_touxiang_big_size">80dp</dimen>
+    <dimen name="drawer_layout_img_header_touxiang_m_size">72dp</dimen>
     <dimen name="drawer_layout_img_header_touxiang_size">64dp</dimen>
+    <dimen name="drawer_layout_img_header_touxiang_small_size">40dp</dimen>
     <dimen name="drawer_layout_selector_height">56dp</dimen>
     <dimen name="drawer_layout_selector_padding">16dp</dimen>
     <dimen name="drawer_layout_selector_icon_size">24dp</dimen>
-    <dimen name="drawer_layout_selector_icon_margin">24dp</dimen>
-
+    <dimen name="drawer_layout_selector_icon_margin">32dp</dimen>
+    <dimen name="consulation_height">200dp</dimen>
     <dimen name="profile_layout_selector_margintop">16dp</dimen>
     <dimen name="profile_layout_selector_tv_marginleft">16dp</dimen>
     <dimen name="profile_layout_selector_item_margintop">24dp</dimen>
@@ -26,11 +31,38 @@
     <dimen name="profile_layout_selector_paddingleftright">24dp</dimen>
     <dimen name="profile_layout_selector2_paddingright">32dp</dimen>
 
+    <dimen name="message_zan_item_padding">16dp</dimen>
+    <dimen name="message_zan_item_textview_padding">4dp</dimen>
+    <dimen name="message_zan_item_textview_margintop">16dp</dimen>
+
     <dimen name="fragment_header_image_height">240dp</dimen>
+    <dimen name="fragment_header__height">358dp</dimen>
+    <dimen name="fragment_header_exp_height">312dp</dimen>
     <dimen name="fragment_header_textview_marginleft">72dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="dialog_content_padding">16dp</dimen>
+    <dimen name="dialog_padding">32dp</dimen>
+    <dimen name="dialog_scrollview_padding">50dp</dimen>
+    <dimen name="dialog_btn_paddingTop">24dp</dimen>
+
+    <dimen name="titlebar_height">56dp</dimen>
+    <dimen name="inform_item_height">64dp</dimen>
     <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="flexible_space_big_image_height">256dp</dimen>
+    <dimen name="xmh_textsiz">24dp</dimen>
+    <dimen name="xh_textsiz">30dp</dimen>
+    <dimen name="h_textsiz">16dp</dimen>
+    <dimen name="mh_textsiz">14dp</dimen>
+    <dimen name="m_textsiz">12dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_h">24dp</dimen>
+
+    <dimen name="flexible_space_height">72dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
 </resources>

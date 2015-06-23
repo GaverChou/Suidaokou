@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/message_zan_item_padding">
+
+    <com.gaverchou.suidaokou.widget.RoundImageView
+        android:id="@+id/message_comment_touxiang_img"
+        style="@style/Touxiang_small" />
+
+    <LinearLayout style="@style/ZanCotent">
+
+        <TextView
+            android:id="@+id/message_comment_tit_tv"
+            style="@style/ZanCotent.Content"
+            android:text="David评论了你"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/message_comment_time_tv"
+            style="@style/ZanCotent.SubContent"
+            android:text="12-9 15:56" />
+
+        <TextView
+            android:id="@+id/message_comment_subtit_tv"
+            style="@style/ZanCotent.Content"
+            android:layout_marginTop="@dimen/message_zan_item_textview_margintop"
+            android:text="一起去啊！" />
+
+        <LinearLayout
+            android:id="@+id/message_comment_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/comment_ll_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/ZanCotent.SubContent"
+                android:text="你在元旦晚会的评论：" />
+
+            <TextView
+                android:id="@+id/message_comment_conten_tv"
+                style="@style/ZanCotent.Content"
+                android:layout_marginTop="@dimen/message_zan_item_textview_margintop"
+                android:text="一起去啊！" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/back_zhuti"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h_textsiz" />
+            </com.gc.materialdesign.views.ButtonRectangle>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="-4dp"
+                android:layout_weight="1"
+                android:background="@color/btn_red">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/huifu_comment"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h_textsiz" />
+            </com.gc.materialdesign.views.ButtonRectangle>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

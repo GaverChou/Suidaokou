@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/fragment_header"
+        layout="@layout/fragment_header" />
+
+    <View
+        android:id="@+id/main_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_theme" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/listview_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/padding_medium">
+
+        <com.gaverchou.observablescrollview.ObservableRecyclerView
+            android:id="@+id/main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

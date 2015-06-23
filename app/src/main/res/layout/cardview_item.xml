@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:handy_tv="http://schemas.android.com/apk/res-auto"
     style="@style/CardviewStyle"
+    android:layout_marginLeft="@dimen/cardview_list_item_margin"
+    android:layout_marginRight="@dimen/cardview_list_item_margin"
+    android:layout_marginTop="@dimen/cardview_list_item_margintop"
     card_view:cardBackgroundColor="@color/white"
     card_view:cardCornerRadius="@dimen/cardview_list_item_cardview_radias">
 
@@ -9,10 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/cardview_list_item_height">
 
-        <ImageView
+        <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/cardview_item_img"
             style="@style/CardviewStyle.Imageview"
-            android:background="@mipmap/header_bg" />
+            android:background="@mipmap/poster" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -29,6 +33,9 @@
                 android:id="@+id/cardview_item_colloge_tv"
                 style="@style/CardviewStyle.SubTv"
                 android:layout_below="@+id/cardview_item_tit"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
                 android:layout_marginTop="@dimen/cardview_list_item_textview_marginTop"
                 android:text="Small Text" />
 
@@ -54,8 +61,8 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_toLeftOf="@+id/linearpanel"
                 android:layout_marginRight="@dimen/cardview_list_item_divier_margin_left"
+                android:layout_toLeftOf="@+id/linearpanel"
                 android:background="@color/divider" />
 
             <LinearLayout
@@ -68,21 +75,22 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <TextView
+                <com.gaverchou.suidaokou.widget.HandyTextView
                     android:id="@+id/cardview_item_day_tv"
                     style="@style/CardviewStyle.TimeTv"
-                    android:text="Small Text"
-                    android:textSize="@dimen/cardview_list_item_big_time_textsize" />
+                    android:text="23"
+                    android:textSize="@dimen/xh_textsiz"
+                    handy_tv:textTTF="Roboto-Light.ttf" />
 
                 <TextView
                     android:id="@+id/cardview_item_mouth_tv"
                     style="@style/CardviewStyle.TimeTv"
-                    android:text="Small Text" />
+                    android:text="otc." />
 
                 <TextView
                     android:id="@+id/cardview_item_time_tv"
                     style="@style/CardviewStyle.TimeTv"
-                    android:text="Small Text" />
+                    android:text="12.00" />
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>

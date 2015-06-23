@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.getbase.floatingactionbutton.FloatingActionsMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/multiple_actions"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    fab:fab_addButtonColorNormal="@color/btn_red"
+    fab:fab_addButtonColorPressed="@color/btn_red"
+    fab:fab_addButtonPlusIconColor="@color/white"
+    fab:fab_labelStyle="@style/menu_labels_style">
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/btn_red"
+        fab:fab_colorPressed="@color/white"
+        fab:fab_size="mini"
+        fab:fab_title="@string/want_go" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_bc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/btn_red"
+        fab:fab_colorPressed="@color/white"
+        fab:fab_size="mini"
+        fab:fab_title="@string/add_alert" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_bd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/btn_red"
+        fab:fab_colorPressed="@color/white"
+        fab:fab_size="mini"
+        fab:fab_title="@string/share" />
+</com.getbase.floatingactionbutton.FloatingActionsMenu>

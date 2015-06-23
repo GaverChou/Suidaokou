@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/message_zan_item_padding">
+
+    <com.gaverchou.suidaokou.widget.RoundImageView
+        android:id="@+id/message_zan_touxiang_img"
+        style="@style/Touxiang_small" />
+
+    <LinearLayout style="@style/ZanCotent">
+
+        <TextView
+            android:id="@+id/message_zan_tit_tv"
+            style="@style/ZanCotent.Content" />
+
+        <TextView
+            android:id="@+id/message_zan_time_tv"
+            style="@style/ZanCotent.SubContent" />
+
+        <TextView
+            android:id="@+id/message_zan_subtit_tv"
+            style="@style/ZanCotent.SubContent"
+            android:layout_marginTop="@dimen/message_zan_item_textview_margintop" />
+
+        <TextView
+            android:id="@+id/message_zan_comment_tv"
+            style="@style/ZanCotent.SubContent" />
+    </LinearLayout>
+
+</LinearLayout>

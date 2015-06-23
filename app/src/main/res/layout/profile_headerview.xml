@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handy_tv="http://schemas.android.com/apk/res-auto"
     style="@style/Header"
     android:background="@mipmap/profile_bg">
 
-    <com.gaverchou.suidaokou.ui.RoundImageView
+    <com.gaverchou.suidaokou.widget.RoundImageView
         android:id="@+id/profile_headerview_userimg"
-        android:layout_width="@dimen/drawer_layout_img_header_touxiang_size"
-        android:layout_height="@dimen/drawer_layout_img_header_touxiang_size"
+        android:layout_width="@dimen/drawer_layout_img_header_touxiang_m_size"
+        android:layout_height="@dimen/drawer_layout_img_header_touxiang_m_size"
         android:layout_centerInParent="true"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/icon" />
 
-    <TextView
+    <com.gaverchou.suidaokou.widget.HandyTextView
         android:id="@+id/profile_headerview_username_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_headerview_userimg"
         android:layout_centerHorizontal="true"
+        handy_tv:textTTF="Roboto-Medium.ttf"
         android:text="GaverChou"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/xmh_textsiz"
         android:textColor="@color/white" />
 
     <TextView
@@ -26,7 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_headerview_username_tv"
         android:layout_centerHorizontal="true"
-        android:text="GaverChou"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="思科信息学院"
+        android:textSize="@dimen/m_textsiz"
         android:textColor="@color/white" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_header_background"
+        android:minHeight="?attr/actionBarSize" />
 </RelativeLayout>

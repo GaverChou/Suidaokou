@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handy_tv="http://schemas.android.com/apk/res-auto"
     style="@style/Drawer">
 
     <RelativeLayout
@@ -8,25 +9,23 @@
         android:background="@mipmap/profile_bg"
         android:padding="@dimen/drawer_layout_img_header_padding">
 
-        <com.gaverchou.suidaokou.ui.RoundImageView
-            android:id="@+id/imageView"
-            android:layout_width="@dimen/drawer_layout_img_header_touxiang_size"
-            android:layout_height="@dimen/drawer_layout_img_header_touxiang_size"
-            android:src="@mipmap/ic_launcher" />
+        <com.gaverchou.suidaokou.widget.RoundImageView
+            android:id="@+id/drawer_layout_touxiang_img"
+            style="@style/Touxiang" />
 
-        <TextView
+        <com.gaverchou.suidaokou.widget.HandyTextView
             android:id="@+id/drawer_layout_username_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:text="GaverChou"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_textsiz"
+            handy_tv:textTTF="Roboto-Light.ttf" />
     </RelativeLayout>
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@null"></ListView>
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 </LinearLayout>

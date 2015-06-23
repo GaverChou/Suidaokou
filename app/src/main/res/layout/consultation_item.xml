@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/consulation_height"
+    android:layout_marginLeft="@dimen/cardview_list_item_margin"
+    android:layout_marginRight="@dimen/cardview_list_item_margin"
+    android:layout_marginTop="@dimen/cardview_list_item_margintop"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gaverchou.suidaokou.widget.CustomImageView
+            android:id="@+id/consulation_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/c1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/zixun_mask" />
+
+        <TextView
+            android:id="@+id/consulation_item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_medium"
+            android:text="假日卢冠"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xmh_textsiz" />
+
+        <TextView
+            android:id="@+id/consulation_item_addr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consulation_item_name_tv"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:text="假日卢冠"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_textsiz" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_small">
+
+            <LinearLayout
+                android:id="@+id/zan_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/drawer_item_icon"
+                    style="@style/Drawer.Seletor_icon"
+                    android:background="@mipmap/ic_favorite_black_18dp" />
+
+                <TextView
+                    android:id="@+id/consulation_item_zan_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:text="32"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h_textsiz" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/zan_ll">
+
+                <View
+                    style="@style/Drawer.Seletor_icon"
+                    android:background="@mipmap/clock" />
+
+                <TextView
+                    android:id="@+id/consulation_item_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:text="32"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h_textsiz" />
+            </LinearLayout>
+
+            <View
+                style="@style/Drawer.Seletor_icon"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/next" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

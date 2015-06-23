@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/path_headimage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/flexible_space_big_image_height"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/poster" />
+
+    <LinearLayout
+        android:id="@+id/headview_divide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:id="@+id/action_info_header_action_nametit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="艺术展"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xh_textsiz" />
+
+            <TextView
+                android:id="@+id/action_info_header_action_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-23 9:30 艺术楼"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mh_textsiz" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium">
+
+            <com.gaverchou.suidaokou.widget.RoundImageView
+                android:id="@+id/fragment_actinfo_touxiang_img"
+                style="@style/Touxiang_small" />
+
+            <LinearLayout
+                android:id="@+id/fragment_actinfo_msgtit_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_toRightOf="@+id/fragment_actinfo_touxiang_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/action_info_header_action_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="艺术展"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h_textsiz" />
+
+                <TextView
+                    android:id="@+id/action_info_header_action_sendtime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="两天前"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/mh_textsiz" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/fragment_actinfo_content_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_actinfo_msgtit_ll"
+                android:layout_marginTop="@dimen/padding_h" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88CECECE" />
+
+        <LinearLayout
+            android:id="@+id/wanggo_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:text="已有12人想去"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/mh_textsiz" />
+
+            <include
+                android:id="@+id/fragment_actinfo_wantgo_layout"
+                layout="@layout/wantgo_layout" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#222222</color>
+    <color name="primary">#3D4FBB</color>
     <color name="primaryDark">#333333</color>
     <color name="accent">#eeff41</color>
-    <color name="black">#ff000000</color>
+    <color name="black">#ff212121</color>
+    <color name="gray">#ff666666</color>
     <color name="divider">#33000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#F2F2F2</color>
     <color name="bg_theme">#FFE3E3E3</color>
     <color name="tv_red">#ff6600</color>
+    <color name="action_actionbar">#3D4FBB</color>
+    <color name="deep_blue">#263698</color>
+    <color name="comment_ll_bg">#f2f2f2</color>
+    <color name="item_click">#e6e6e6</color>
+    <color name="btn_red">#FF4180</color>
+    <color name="mask">#AAFFFFFF</color>
+    <color name="gray100">#e6e6e6</color>
+    <color name="gray50">#f2f2f2</color>
+    <color name="dialog_mask">#55000000</color>
+    <color name="rippelColor">#FFFFFF</color>
 </resources>

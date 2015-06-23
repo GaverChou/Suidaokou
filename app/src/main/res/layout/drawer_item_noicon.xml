@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-style="@style/Drawer.Seletor">
+<com.gc.materialdesign.views.LayoutRipple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    ripple:rippleSpeed="35"
+    style="@style/Drawer.Seletor">
 
-<TextView
-    android:id="@+id/drawer_item_noicon_tit_tv"
-    style="@style/Drawer.Seletor_tv"
-    android:text="@string/action_settings" />
-</LinearLayout>
+    <TextView
+        android:id="@+id/drawer_item_noicon_tit_tv"
+        style="@style/Drawer.Seletor_tv"
+        android:text="@string/action_settings" />
+</com.gc.materialdesign.views.LayoutRipple>
