@@ -72,6 +72,7 @@ public class ConsulationOrInformFragment extends BaseFragment<MainActivity> {
                 @Override
                 public void onItemClick(View view, int position) {
                     Intent intent = new Intent(mActivity,InformDetailActivity.class);
+                    intent.putExtra(InformDetailActivity.POS, position);
                     startActivity(intent);
                 }
             });
